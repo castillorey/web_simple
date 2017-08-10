@@ -1,0 +1,10 @@
+h1{
+	color:peru;
+}
+.banner{
+	width: 400px;
+	height:300px;
+}
+header nav ul{
+list-style: none;
+}
