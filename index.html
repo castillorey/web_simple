@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="Recursos/css/style.css">
 	<title>Rent car alquiler de autos de todo tipo</title>
 </head>
-<body>
-	<header>
-		<figure>
+<body class="contenedor">
+	<header class="cabecera">
+		<figure class="logo">
 			<img src="Recursos/Imagenes/logo.png">
 		</figure>
-		<nav>
+		<nav class="navegador">
 			<ul>
 				<li><a href="#">Inicio</a></li>
 				<li><a href="#">Quiénes somos</a></li>
@@ -23,36 +23,44 @@
 	</header>
 
 	<section>
-		<figure>
-			<img class="banner" src="Recursos/Imagenes/carro.svg">
+		<figure class="banner">
+			<img src="Recursos/Imagenes/carro.svg">
 		</figure>
 	</section>
 
-	<main>
-		<h1>Rent Car el carro ideal para usted!!</h1>
-		<article>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repudiandae molestias maiores, a natus harum ipsam quibusdam tenetur ex laborum error sapiente reprehenderit consequatur sit placeat enim itaque, perspiciatis hic.</p>
-		</article>
-	</main>
+	<div class="centro">
+		<div class="contenedor">
+			<main class="principal">
+				<h1>Rent@Car el carro preciso en el momento preciso!!</h1>
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis repudiandae molestias maiores, a natus harum ipsam quibusdam tenetur ex laborum error sapiente reprehenderit consequatur sit placeat enim itaque, perspiciatis hic.</p>
+				</article>
+			</main>
+		</div>
 
-	<aside>
-		<h3>Nuestras líneas</h3>
-		<nav>
-			<ul>
-				<li><a href="#">Clásicos</a></li>
-				<li><a href="#">Deportivos</a></li>
-				<li><a href="#">Motos</a></li>
-			</ul>
-		</nav>
-	</aside>
+		<aside class="lineas">
+			<h3>Nuestras líneas</h3>
+			<nav>
+				<ul>
+					<li><a href="#">Clásicos</a></li>
+					<li><a href="#">Deportivos</a></li>
+					<li><a href="#">Motos</a></li>
+				</ul>
+			</nav>
+		</aside>
+	</div>
+	
 
 	<footer>
-		<address>Cra x calle z</address>
-		<ul>
-			<li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
-			<li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
-			<li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-		</ul>
+		<div class="contenedor">
+			<address class="info">Cra 54 # 64 - 55<span class="salto">Barranquilla - Colombia</span ></address>
+			<ul class="redes">
+				<span>Visitenos en: &nbsp;</span>
+				<li><a href=""><i class="fa fa-twitter"></i></a></li>
+				<li><a href=""><i class="fa fa-instagram"></i></a></li>
+				<li><a href=""><i class="fa fa-facebook"></i></a></li>
+			</ul>
+		</div>
 	</footer>
 </body>
 </html>

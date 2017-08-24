@@ -1,10 +1,111 @@
-h1{
-	color:peru;
+.contenedor{
+	width: 90%;
+	margin: 0 auto;
 }
-.banner{
+/* Cabecera */
+.cabecera{
+	height: 90px;
+}
+.cabecera .logo{
+	float: left;
+}
+
+.navegador{
+	float: right;
+}
+.navegador li{
+	list-style: none;
+	float:left;
+	font-size: 15px;
+	margin-right: 10px;
+	padding: 10px;
+	border-color: #EEE;
+	border-radius: 5px;
+}
+.navegador li:hover{
+	background: #EEE; 
+}
+
+/* Banner */
+section{
+	margin-bottom: 50px;
+}
+
+.banner img{
+	width:100%;
+}
+.banner {
 	width: 400px;
-	height:300px;
+	margin: 0 auto;
 }
-header nav ul{
-list-style: none;
+/*Centro*/
+.centro{
+	height: 150px;
 }
+
+.principal{
+	width:70%;
+	float: left;
+}
+.principal h1{
+	color: #4283B0;
+	text-align: center;
+	text-shadow: 1px 3px #EEE;
+}
+
+.lineas {
+	width: 30%;
+	float: right;
+	text-align: center;
+}
+.lineas h3{
+	border-radius: 5px;
+	background-color: #EEE;
+}
+.lineas ul{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+.lineas li{
+	border:solid 1px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border-color: #EEE;
+}
+.lineas li:hover{
+	background-color: #EEE;
+}
+
+/* Pie*/
+footer{
+	background-color: #424F9A;
+	color: #FFF;
+	height: 70px;
+}
+
+.salto{
+	display: block;
+}
+
+.info{
+	float: left;
+	padding:5;
+	text-align: center;
+}
+
+.redes{
+	float: right;
+}
+.redes li{
+	list-style: none;
+	display: inline;
+	padding-right: 5px;
+}
+.redes li a{
+	color: #EEE;
+}
+.redes i{
+	font-size: 25px;
+}
+
