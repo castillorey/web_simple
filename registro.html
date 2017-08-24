@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+	<link rel="stylesheet" href="Recursos/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="Recursos/css/style.css">
+</head>
+<body class="contenedor registro">
+	<h2 class="titulo">Registrese</h2>
+
+	<div class="centro">
+		<form action="#">
+			<fieldset>
+				<label for="nombres">Nombre(s):</label>
+				<input type="text" name="nombres" id="nombres" required>
+				<br>
+
+				<label for="apellidos">Apellido(s):</label>
+				<input type="text" name="apellidos" id="apellidos" required>
+				<br>
+
+				<label for="email">Correo:</label>
+				<input type="email" name="email" id="email" required>
+				<br>
+				
+				<label for="tipoVehiculo">Tipo Vehiculo:</label>
+				<select name="tipoVehiculo" id="tipoVehiculo">
+					<option value="1">Deportivo</option>
+					<option value="2">Clásico</option>
+					<option value="3">Moto</option>
+				</select>
+				<br>
+
+				<label for="passw1">Contraseña:</label>
+				<input type="password" name="passw1" id="passw1" required>
+				<br>
+
+				<label for="passw2">Confirmar contraseña:</label>
+				<input type="password" name="passw2" id="passw2">
+				<br>
+
+
+				<input type="button" name="enviar" id="enviar" value="Enviar">
+				<br>
+				<div id="error"></div>
+			</fieldset>
+		</form>
+	</div>
+
+
+
+<script type="text/javascript" src="Recursos/js/app.js"></script>
+</body>
+</html>
