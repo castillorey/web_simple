@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+	<link rel="stylesheet" href="Recursos/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Recursos/css/simulador.css">
+
+	<title>Simulador de Crédito</title>
+</head>
+<body>
+	<div class="container bounce">
+		
+		<h2> Amortización para Compra de Vehiculos nuevos o Usados</h2>
+		<form action="#">	
+				<label for="prestamo">Préstamo:</label>
+				<input type="number" name="prestamo" id="prestamo" placeholder="Ej. 30.000.000">
+
+				<label for="tasaMax">Tasa Màxima:</label>
+				<input type="number" class="prcent" name="tasaMax" id="tasaMax" placeholder="Entre 1% y 3%">
+
+				<label for="tasa">Tasa Deseada:</label>
+				<input type="number" class="prcent" name="tasa" id="tasa" placeholder="Ej. 2.3%">
+
+				<label for="maxPeriodo">Maximo Periodo (meses):</label>
+				<input type="number" name="maxPeriodo" id="maxPeriodo" placeholder="Entre 6 a 72 meses">
+
+				<label for="periodo">Periodo (meses):</label>
+				<input type="number" name="periodo" id="periodo" placeholder="Ej. 36">
+				
+				<input type="submit" value="Calcular">
+		</form>
+	</div>
+</body>
+</html>

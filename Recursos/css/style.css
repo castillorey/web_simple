@@ -26,6 +26,16 @@
 	.navegador li:hover{
 		background: #EEE; 
 	}
+	.simulador{
+		background-color: #424F9A;
+	}
+	.simulador a{
+		color: white;
+	}
+	li.simulador:hover{
+		background-color: #818CCE;
+		cursor: pointer;
+	}
 
 /* Banner */
 	section{
@@ -78,7 +88,51 @@
 		.lineas li:hover{
 			background-color: #EEE;
 		}
+	/*Animación*/
+	.bounceInLeft {
+	    -webkit-animation-name: bounceInLeft;
+	    animation-name: bounceInLeft;
+		background-repeat: no-repeat;
+		background-position: left top; 
+		-webkit-animation-duration: 2.3s; 
+		animation-duration: 2.3s; 
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both; 
+	}
 
+	@keyframes bounceInLeft {
+	    0% {
+	       opacity: 0;
+	       transform: translateX(-600px);
+	    }
+	    60% {
+	       opacity: 1;
+	       transform: translateX(30px);
+	    }
+	    80% {
+	       transform: translateX(-10px);
+	    }
+	    100% {
+	       transform: translateX(0);
+	    }
+	 }
+	         
+	@-webkit-keyframes bounceInLeft {
+		0% {
+		   opacity: 0;
+		   -webkit-transform: translateX(-600px);
+		}
+		60% {
+		   opacity: 1;
+		   -webkit-transform: translateX(30px);
+		}
+		80% {
+		   -webkit-transform: translateX(-10px);
+		}
+		100% {
+		   -webkit-transform: translateX(0);
+		}
+	}
 /* Pie*/
 	footer{
 		background-color: #424F9A;
