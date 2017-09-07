@@ -1,11 +1,18 @@
 .container{
-	width:50%;
-	margin:0 auto;
+	width:90%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+/* Entrada */
+.entrada{
+	width:40%;
 	border-radius: 5px;
     background-color: #f2f2f2;
     padding: 30px 20px;
-    margin-top: 50px;
+	float:left;
+	margin-right: 20px;
 }
+
 h2{
 	text-align: center;
 }
@@ -21,7 +28,7 @@ input[type=number]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-input[type=submit]{
+input[type=button]{
 	width: 85%;
     background-color: #424F9A;
     color: white;
@@ -42,7 +49,26 @@ input[type=submit]{
   40% {transform: translateY(-30px);}
   60% {transform: translateY(-15px);}
 }
+/* Simulador tabla*/
+#tabla{
 
+}
+.textoVertical{
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.cuotaElegida{
+	background-color: yellow;
+	color:red;
+}
+.tasaElegida{
+	color: red;
+}
+.periodoElegido{
+	color:red;
+}
 
          
  
