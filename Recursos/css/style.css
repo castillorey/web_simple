@@ -1,18 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Oxygen');
+*{
+	font-family: 'Oxygen', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #0074D9;
+}
 /*Contenedor*/
 	.contenedor{
-		width: 90%;
+		width: 95%;
 		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 15px 200px 15px auto 15px auto;
 	}
 /* Cabecera */
 	.cabecera{
-		height: 90px;
+		grid-column: 1;
+		grid-row: 1;
+
+		display: grid;
+		grid-template-columns: 10% 30% 1fr;
+		grid-template-rows: auto;
 	}
 	.cabecera .logo{
-		float: left;
+		grid-column: 1;
 	}
 
 	.navegador{
-		float: right;
+		grid-column: 4;
 	}
 	.navegador li{
 		list-style: none;
@@ -26,68 +42,60 @@
 	.navegador li:hover{
 		background: #EEE; 
 	}
-	.simulador{
-		background-color: #424F9A;
-	}
-	.simulador a{
-		color: white;
-	}
-	li.simulador:hover{
-		background-color: #818CCE;
-		cursor: pointer;
-	}
 
 /* Banner */
-	section{
-		margin-bottom: 50px;
+	.banner {
+		grid-row: 3;
+		width: 400px;
+		margin: 0 auto;
 	}
 
 	.banner img{
 		width:100%;
 	}
-	.banner {
-		width: 400px;
-		margin: 0 auto;
-	}
 
 	/*Centro*/
 		.centro{
-			height: 150px;
+			grid-row: 5;
+
+			display: grid;
+			grid-template-columns: 50% 10% 1fr;
+			grid-template-rows: auto;
 		}
 
 		.principal{
-			width:70%;
-			float: left;
+			padding-left: 5%;
+			grid-column: 1;
 		}
 		.principal h1{
-			color: #4283B0;
-			text-align: center;
-			text-shadow: 1px 3px #EEE;
-		}
-	/*Lineas*/
-		.lineas {
-			width: 30%;
-			float: right;
+			font-family: 'Abel', sans-serif;
+			color: #001f3f;
 			text-align: center;
 		}
-		.lineas h3{
-			border-radius: 5px;
-			background-color: #EEE;
-		}
-		.lineas ul{
-			list-style: none;
-			margin: 0;
-			padding:0;
-		}
-		.lineas li{
-			border:solid 1px;
-			margin-bottom: 5px;
-			border-radius: 5px;
-			border-color: #EEE;
-		}
-		.lineas li:hover{
-			background-color: #EEE;
-		}
+
+		/*Lineas*/
+			.lineas {
+				grid-column: 3;
+				text-align: center;
+			}
+			.lineas h3{
+				border-radius: 5px;
+				background-color: #EEE;
+			}
+			.lineas ul{
+				list-style: none;
+				margin: 0;
+				padding:0;
+			}
+			.lineas li{
+				border:solid 1px;
+				margin-bottom: 5px;
+				border-radius: 5px;
+				border-color: #EEE;
+			}
+			.lineas li:hover{
+				background-color: #EEE;
+			}
 	/*Animación*/
 	.bounceInLeft {
 	    -webkit-animation-name: bounceInLeft;
@@ -135,9 +143,12 @@
 	}
 /* Pie*/
 	footer{
+		grid-row: 7;
+
+		display: grid;
+		grid-template-columns: 50% 20% 20% 5%;
 		background-color: #424F9A;
 		color: #FFF;
-		height: 70px;
 	}
 
 	.salto{
@@ -145,13 +156,13 @@
 	}
 /*Información*/
 	.info{
-		float: left;
-		padding:5;
+		grid-column: 1;
+		padding: 5px;
 		text-align: center;
 	}
 /*Redes*/
 	.redes{
-		float: right;
+		grid-column: 3;
 	}
 	.redes li{
 		list-style: none;
@@ -164,12 +175,3 @@
 	.redes i{
 		font-size: 25px;
 	}
-
-/*****************  Pagina Registro *********************/
-.registro .titulo{
-	text-align: center;
-}
-.registro #error{
-	color: red;
-	font-weight: bold;
-}
